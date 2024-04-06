@@ -7,7 +7,23 @@ const typeDefs = gql`
   type Query {
     tracksForHome: [Track!]!
   }
-
+type Query {
+    "Get spaceCats array for homepage grid"
+    SpaceCat: [SpaceCat]
+  }
+  
+  type SpaceCat {
+    id: ID!
+    name: String!
+    age: Int
+    missions: [Mission]
+  }
+  
+  type Mission {
+    id: ID!
+    name: String!
+    description: String!
+  }
 
   "A track is group of modules that teaches about a specific topic"
   type Track {
@@ -18,6 +34,8 @@ const typeDefs = gql`
     length: Int
     modulesCount: Int
   }
+
+
 
   "Author of a complete track"
   type Author {
