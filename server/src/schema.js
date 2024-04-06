@@ -9,10 +9,10 @@ const typeDefs = gql`
 
   type Query {
     "Get spaceCats array for homepage grid"
-    SpaceCat: [SpaceCat]
+    spaceCats: [spaceCats]
   }
   
-  type SpaceCat {
+  type spaceCats {
     id: ID!
     name: String!
     age: Int

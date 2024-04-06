@@ -7,6 +7,7 @@ const typeDefs = require("./schema");
 const mocks = {
   Query: () => ({
     tracksForHome: () => [...new Array(6)],
+    ListSpaceCats: () => [...new Array(6)]
   }),
 
   Track: () => ({
@@ -21,7 +22,8 @@ const mocks = {
   Author: () => ({
     id: () => "Author-123",
     name: () => "John",
-    photo: () => "https://res.cloudinary.com/dety84pbu/image/upload/v1598465568/nebula_cat_djkt9r.jpg",
+    photo: () =>
+      "https://res.cloudinary.com/dety84pbu/image/upload/v1598465568/nebula_cat_djkt9r.jpg",
   }),
 };
 
