@@ -7,8 +7,11 @@
     "start": "nodemon src/index"
   },
   "dependencies": {
+    "@apollo/server": "^4.10.2",
     "@graphql-tools/mock": "^9.0.2",
-    "@graphql-tools/schema": "^10.0.3"
+    "@graphql-tools/schema": "^10.0.3",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",

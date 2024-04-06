@@ -2,12 +2,12 @@ const gql = require("graphql-tag");
 
 const typeDefs = gql`
 "Query fileds are the entry points the rest of our schema"
-"Query to get tracks array of the homepage grid"
 
   type Query {
     tracksForHome: [Track!]!
   }
-type Query {
+
+  type Query {
     "Get spaceCats array for homepage grid"
     SpaceCat: [SpaceCat]
   }
@@ -18,7 +18,7 @@ type Query {
     age: Int
     missions: [Mission]
   }
-  
+
   type Mission {
     id: ID!
     name: String!
