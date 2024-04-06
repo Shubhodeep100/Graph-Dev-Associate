@@ -13,7 +13,7 @@ async function startApolloServer() {
   });
 
   const { url } = await startStandaloneServer(server);
-  console.log(`Server is a Running!
+  console.log(`Server is Running!
     query at ${url}
     `);
 }
