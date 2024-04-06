@@ -1,7 +1,7 @@
 const gql = require("graphql-tag");
 
 const typeDefs = gql`
-"Query fileds are the entry points the rest of our schema"
+"Query fileds are the entry points for the rest of our schema"
 
   type Query {
     tracksForHome: [Track!]!
@@ -34,8 +34,6 @@ const typeDefs = gql`
     length: Int
     modulesCount: Int
   }
-
-
 
   "Author of a complete track"
   type Author {
