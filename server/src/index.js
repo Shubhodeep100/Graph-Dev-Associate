@@ -6,6 +6,10 @@ const typeDefs = require("./schema");
 
 
 const mocks = {
+  Query: () => ({
+    tracksForHome: () => [...new Array(6)],
+  }),
+  
   Track: () => ({
     id: () => 'track_01',
     title: () => 'Astro Kitty, Space Explorer',
@@ -26,7 +30,7 @@ async function startApolloServer() {
   const server = new ApolloServer({
     schema: addMocksToSchema({
         schema: makeExecutableSchema({ typeDefs }),
-        mocks: {},
+        mocks,
     })
   });
 
