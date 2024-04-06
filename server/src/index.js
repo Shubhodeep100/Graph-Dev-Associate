@@ -4,12 +4,11 @@ const { addMocksToSchema } = require("@graphql-tools/mock");
 const { makeExecutableSchema } = require("@graphql-tools/schema");
 const typeDefs = require("./schema");
 
-
 const mocks = {
   Query: () => ({
     tracksForHome: () => [...new Array(6)],
   }),
-  
+
   Track: () => ({
     id: () => 'track_01',
     title: () => 'Astro Kitty, Space Explorer',
